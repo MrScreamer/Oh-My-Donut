@@ -1,21 +1,66 @@
 <header class="header">
   <div class="container">
     <nav class="nav-container">
-      <a href=""><img src="./images/logo.png" alt="Oh my donut logo" /></a>
-      <button type="button" class="open" data-modal-open>lol</button>
+      <div class="header-top">
+        <a href=""
+          ><img src="./images/logo.png" alt="Oh my donut logo" class="logo"
+        /></a>
+        <button type="button" class="menu-button" data-modal-open>
+          <svg width="30px" height="16px" class="burger-icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <div class="header-top-modal">
+            <a href=""
+              ><img src="./images/logo.png" alt="Oh my donut logo" class="logo"
+            /></a>
+            <button type="button" class="menu-button" data-modal-close>
+              <svg width="30px" height="16px" class="burger-icon">
+                <use href="./images/sprite.svg#icon-Close"></use>
+              </svg>
+            </button>
+          </div>
           <ul class="nav-list">
-            <nav-item><a href="" class="nav-link">About us</a></nav-item>
-            <nav-item><a href="" class="nav-link">Program</a></nav-item>
-            <nav-item><a href="" class="nav-link">Speaker</a></nav-item>
-            <nav-item><a href="" class="nav-link">Price</a></nav-item>
-            <nav-item><a href="" class="nav-link">Reviws</a></nav-item>
-            <nav-item><a href="" class="nav-link">Contact</a></nav-item>
-            <button type="button" data-modal-close>lol</button>
+            <li class="nav-item"><a href="" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Program</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Speaker</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Price</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Reviws</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="header-bottom">
+      <h1 class="header-title">Donut Masterclass with the Donut King</h1>
+      <h2 class="header-subtitle">Hosted by Eva Green</h2>
+      <button type="button" class="header-register">Register</button>
+      <ul class="header-socials-list">
+        <li class="header-socials-item">
+          <a href=""
+            ><svg width="16px" height="14.53px" class="header-socials">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-socials-item">
+          <a href=""
+            ><svg width="16px" height="16px" class="header-socials">
+              <use href="./images/sprite.svg#icon-Instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-socials-item">
+          <a href=""
+            ><svg width="7.54px" height="16px" class="header-socials">
+              <use href="./images/sprite.svg#icon-Facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
