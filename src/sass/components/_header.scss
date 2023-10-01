@@ -1,17 +1,46 @@
 .header {
-    background-image: url(./../images/header-bg.jpg);
+    // background-image: url(./../images/header-bg.jpg);
     mix-blend-mode: darken;
     height: 312px;
     padding-bottom: 16px;
     padding-top: 16px;
 }
 
+.h-upper {
+display: flex;
+justify-content: space-between;
+}
+
 .logo {
     display: block;
     width: 108px;
     height: 50px;
+    color: black;
+    fill: black;
+    z-index: 1000;
 }
 
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-button {
+    border: none;
+    padding: 0;
+
+}
+
+.burger-menu {
+    width: 30px;
+    height: 16px;
+    display: block;
+}
+
+.menu {
+    display: none;
+}
 
 
 .nav-list {
