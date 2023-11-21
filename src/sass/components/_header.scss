@@ -1,0 +1,25 @@
+.header-container {
+    padding-top: 16px;
+    background-image: url(./../images/header-bg.jpg);
+    height: 312px;
+}
+
+.logo-menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-btn {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.header-btn-icon {
+    width: 30px;
+    height: 16px;
+    
+        
+}
