@@ -1,0 +1,726 @@
+.flex-container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.container--ellipse-position {
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    max-width: 1280px;
+  }
+
+  &::after {
+    @media screen and (min-width: $breakpoint-tablet) {
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-image: url('../images/images-about/ellipse/ellipse-content-middle.svg');
+      position: absolute;
+      top: -12px;
+      right: 198px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      width: 67px;
+      height: 67px;
+      background-size: contain;
+      top: -26px;
+      right: 347px;
+    }
+  }
+}
+
+.program {
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 17.5px;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-top: 40px;
+    padding-bottom: 22px;
+  }
+
+  @media screen and (min-width: $breakpoint-decktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &::after {
+    content: '';
+    width: 21px;
+    height: 32px;
+    background-image: url('../images/images-about/ellipse/ellipse-read-more-part.svg');
+    position: absolute;
+    top: 442px;
+    right: 0;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 27px;
+    height: 50px;
+    background-image: url('../images/images-about/ellipse/ellipse-program-right.svg');
+    position: absolute;
+
+    @media screen and (max-width: 767px) {
+      top: 162px;
+      right: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      top: -10px;
+      right: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      content: '';
+      width: 64px;
+      height: 100px;
+      background-image: url('../images/images-about/ellipse/ellipse-program-right-part.svg');
+      position: absolute;
+      top: -55px;
+      right: 0;
+      background-size: contain;
+    }
+  }
+
+  // &--ellipse {
+  //   position: relative;
+
+  //   &::before {
+  //     content: '';
+  //     width: 22px;
+  //     height: 50px;
+  //     background-image: url('../images/images-about/ellipse/ellipse-program-left.svg');
+  //     position: absolute;
+
+  //     @media screen and (max-width: 767px) {
+  //       top: 262px;
+  //       left: -2px;
+  //     }
+  //   }
+  // }
+
+  &__wrapper {
+    @media screen and (min-width: $breakpoint-tablet) {
+      min-width: 329px;
+      margin-right: 39px;
+      padding-top: 12px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      max-width: 417px;
+      margin-right: 116px;
+      padding-top: 64px;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates';
+    color: $main-color;
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+      font-weight: $font-w-500;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      max-width: 280px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      text-align: left;
+      font-weight: $font-w-500;
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      text-align: left;
+      font-weight: $font-w-500;
+      font-size: 32px;
+      line-height: 1.21;
+      margin-bottom: 24px;
+    }
+
+    &::after {
+      content: '';
+      width: 50px;
+      height: 50px;
+      background-image: url('../images/images-about/ellipse/ellipse-program-text.svg');
+      position: absolute;
+      top: -10px;
+      left: 175px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        top: -13px;
+        left: 0px;
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        width: 100px;
+        height: 100px;
+        top: -48px;
+        left: 96px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    color: $main-color;
+    font-weight: 400;
+    font-size: $font-sz-16;
+    line-height: 1.25;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      width: 392px;
+      font-size: $font-sz-18;
+      line-height: 1.22;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+
+      display: block;
+
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      background-image: url('../images/hat.svg');
+      flex-shrink: 0;
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        margin-right: 16px;
+        left: -40px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      // max-width: 279px;
+      margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+    @media screen and (min-width: $breakpoint-tablet) {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+    }
+  }
+
+  &__list-text {
+    font-weight: 400;
+    font-size: $font-sz-16;
+    line-height: 1.25;
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+  }
+
+  &__text--desktop {
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: block;
+      width: 392px;
+      font-weight: 400;
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+
+    &.is-hidden {
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    font-family: 'Montserrat';
+    color: $main-color;
+    font-weight: $font-w-500;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 0;
+    padding-right: 2px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #f3848c;
+      transform: scale(1.3);
+      box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: $font-sz-16;
+      line-height: 1.25;
+
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: $font-sz-18;
+      line-height: 1.22;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      display: none;
+    }
+
+    &--close {
+      font-family: 'Montserrat';
+      color: $main-color;
+      font-weight: $font-w-500;
+      background-color: inherit;
+      margin-top: 15px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      padding: 0;
+      padding-right: 2px;
+
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (max-width: 767px) {
+        font-size: $font-sz-16;
+        line-height: 1.25;
+
+        display: inline-block;
+        margin-bottom: 24px;
+      }
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: $font-sz-18;
+        line-height: 1.22;
+      }
+
+      @media screen and (min-width: $breakpoint-decktop) {
+        display: none;
+      }
+
+      &:hover,
+      &:focus {
+        color: #f3848c;
+        transform: scale(1.3);
+        box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+      }
+    }
+  }
+
+  &__examples-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      min-width: 340px;
+      align-content: flex-start;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      min-width: 716px;
+    }
+  }
+
+  &__examples-bg {
+    border-radius: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:nth-child(2) {
+      margin-top: 28px;
+      margin-left: 20px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 28px;
+      margin-left: 20px;
+    }
+
+    &:nth-child(odd) {
+      margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      &:nth-child(odd) {
+        margin-bottom: 40px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 0;
+        margin-left: 32px;
+        margin-bottom: 40px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 79px;
+      }
+      &:nth-child(4) {
+        margin-left: 32px;
+        margin-top: 39px;
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      &:nth-child(1) {
+        margin-bottom: 36px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 60px;
+        margin-bottom: 0;
+        margin-left: 136px;
+      }
+
+      &:nth-child(3) {
+        margin-top: -24px;
+        padding-top: 0;
+        margin-bottom: 36px;
+      }
+
+      &:nth-child(4) {
+        margin-top: 36px;
+        margin-bottom: 0;
+        margin-left: 136px;
+      }
+    }
+
+    &--position {
+      position: relative;
+      border: 1px solid $accent-pink-color;
+      border-radius: 50%;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        // transition-property: box-shadow transform;
+        // transition-duration: 0.3s;
+        // transition-delay: 0s;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        transform: scale(1.03);
+        box-shadow: 0 0 5px 3px rgb(243 132 140 / 42%);
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        // z-index: 1;
+
+        background: linear-gradient(
+          0deg,
+          #000000 -12%,
+          rgba(156, 156, 156, 0) 56.6%
+        );
+      }
+    }
+
+    &--ecllipse {
+      position: relative;
+
+      &::after {
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-image: url('../images/images-about/ellipse/ellipse-program-3circle-mini.svg');
+          position: absolute;
+          top: 20px;
+          right: 175px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 20px;
+          height: 20px;
+          top: -11px;
+          right: 364px;
+        }
+      }
+
+      &::before {
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url('../images/images-about/ellipse/ellipse-Eva.svg');
+          position: absolute;
+          top: 132px;
+          right: 218px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 100px;
+          height: 100px;
+          background-size: contain;
+          top: 140px;
+          right: 402px;
+        }
+      }
+    }
+
+    &--ecllipse-firts {
+      position: relative;
+
+      // &::after {
+      //   @media screen and (max-width: 767px) {
+      //     content: '';
+      //     width: 20px;
+      //     height: 20px;
+      //     background-image: url('../images/images-about/ellipse/ellipse-Eva-mobile-mini.svg');
+      //     position: absolute;
+      //     top: -138px;
+      //     right: -113px;
+      //   }
+
+      //   @media screen and (min-width: $breakpoint-tablet) {
+      //     content: '';
+      //     width: 16px;
+      //     height: 16px;
+      //     background-image: url('../images/images-about/ellipse/ellipse-read-more-bottom.svg');
+      //     position: absolute;
+      //     top: 447px;
+      //     right: 449px;
+      //   }
+
+      //   @media screen and (min-width: $breakpoint-decktop) {
+      //     width: 32px;
+      //     height: 32px;
+      //     background-size: contain;
+      //     top: 640px;
+      //     right: 747px;
+      //   }
+      // }
+
+      &::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        background-image: url('../images/images-about/ellipse/ellipse-content-first-part.svg');
+        position: absolute;
+        top: 120px;
+        right: -47px;
+
+        @media screen and (min-width: $breakpoint-tablet) {
+          width: 40px;
+          height: 40px;
+
+          top: 83px;
+          right: 125px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 80px;
+          height: 80px;
+          background-size: contain;
+          top: 165px;
+          right: 242px;
+        }
+      }
+    }
+
+    &--ecllipse-last {
+      position: relative;
+
+      &::before {
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 32px;
+          height: 32px;
+          background-image: url('../images/images-about/ellipse/ellipse-content-middle-grey.svg');
+          position: absolute;
+          top: 154px;
+          right: 167px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          display: none;
+        }
+      }
+
+      &::after {
+        @media screen and (min-width: $breakpoint-tablet) {
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url('../images/images-about/ellipse/ellipse-content-middle-pink.svg');
+          position: absolute;
+          top: -90px;
+          right: 125px;
+        }
+
+        @media screen and (min-width: $breakpoint-decktop) {
+          width: 100px;
+          height: 100px;
+          background-size: contain;
+          top: -51px;
+          right: 261px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 128px;
+    height: 128px;
+    position: relative;
+
+    filter: drop-shadow(10px 15px 25px rgba(210, 201, 201, 0.45));
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 152px;
+      height: 152px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      width: 288px;
+      height: 288px;
+    }
+  }
+
+  &__examples-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    z-index: 10;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      top: 53%;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      top: 67%;
+    }
+  }
+
+  &__examples-title {
+    font-family: 'Montserrat Alternates';
+    color: $white-color;
+
+    @media screen and (max-width: 767px) {
+      font-weight: $font-w-500;
+      font-size: 14px;
+      line-height: 1.21;
+
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-weight: $font-w-500;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      font-weight: $font-w-500;
+      font-size: 24px;
+      line-height: 1.2;
+
+      margin-bottom: 16px;
+    }
+  }
+
+  &__examples-text {
+    font-family: 'Montserrat';
+    color: $white-color;
+
+    @media screen and (max-width: 767px) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+
+    @media screen and (min-width: $breakpoint-decktop) {
+      font-weight: 400;
+      font-size: $font-sz-16;
+      line-height: 1.25;
+    }
+  }
+}
+.is-hidden {
+  display: none;
+}

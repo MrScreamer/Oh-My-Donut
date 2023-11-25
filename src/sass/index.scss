@@ -1,7 +1,19 @@
-@import './utils/fonts';
+// utils
 @import './utils/variables';
-
-@import './base/container';
+// base
 @import './base/base';
-
-@import './components/header';
+@import './base/container';
+// component
+@import './components/button';
+@import './components/social-icon';
+@import './components/button-scroll';
+// layout
+@import './layout/about-us';
+@import './layout/contact';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/price';
+@import './layout/program';
+@import './layout/registration';
+@import './layout/reviews';
+@import './layout/speakers';
