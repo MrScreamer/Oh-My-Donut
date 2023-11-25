@@ -5,7 +5,7 @@
   "homepage": "https://MrScreamer.github.io/oh-my-donut/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /oh-my-donut/"
+    "build": "parcel build src/*.html --public-url /Oh-my-donut/"
   },
   "repository": {
     "type": "git",
